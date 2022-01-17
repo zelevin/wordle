@@ -21,16 +21,16 @@ The only additional wrinkle is the handling of the cases when we know the secret
 
 The files in this repository are:
 
-* wordle_all.txt
+[wordle_all.txt](wordle_all.txt)
 
 The sorted list of all permitted Wordle guesses.
 
-* wordle_precompute_scores.py
+[wordle_precompute_scores.py](wordle_precompute_scores.py)
 
-To speed up the strategy generation, all the scores are precomputed and saved in a compressed numpy file (66Mb).
-Run this script first.
+To speed up the strategy generation, all the scores are precomputed and saved in a compressed numpy file.
+Run this script first. It takes ~3 minutes and creates a ~66Mb file.
 
-* wordle_strategy.py
+[wordle_strategy.py](wordle_strategy.py)
 
 Analyses possible opening words, returning the probability that the correct word is guessed on the third turn.
 If there are N possible candidates after the first two moves, the code considers that the probability of guessing
@@ -46,7 +46,7 @@ response from the game.
 I've ran the above script in batch mode on all permitted words. The best word and score were **slate** with the
 third-guess win probability of **0.2533**.
 
-* slate.txt
+[slate.txt](slate.txt)
 
 The result of running the script above for the best optimal word <b>slate</b>.
 
