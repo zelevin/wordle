@@ -47,7 +47,7 @@ response from the game.
 I've ran the above script in batch mode on all permitted words. The best word and score were **slate** with the
 third-guess win probability of **0.2533**.
 
-[slate.txt](slate.txt)
+[wordle_slate.txt](wordle_slate.txt)
 
 The result of running the script above for the best optimal word <b>slate</b>.
 
