@@ -27,7 +27,8 @@ The sorted list of all permitted Wordle guesses.
 
 * wordle_precompute_scores.py
 
-To speed up the strategy generation, all the scores are precomputed and saved in a 66Mb file. Run this script first.
+To speed up the strategy generation, all the scores are precomputed and saved in a compressed numpy file (66Mb).
+Run this script first.
 
 * wordle_strategy.py
 
