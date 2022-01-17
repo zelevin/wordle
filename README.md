@@ -49,3 +49,5 @@ third-guess win probability of <b>0.2533</b>.
 
 The result of running the script above for the best optimal word <b>slate</b>.
 
+I've also run a version of the above script that is aware of the secret words list. In this case, the optimal first
+move is <b>trace</b>, with the third-move winning probability of <b>0.5996</b>.
