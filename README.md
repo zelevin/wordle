@@ -32,9 +32,10 @@ Run this script first. It takes ~3 minutes and creates a ~66Mb file.
 
 [wordle_strategy.py](wordle_strategy.py)
 
-Analyses possible opening words, returning the probability that the correct word is guessed on the third turn.
-If there are N possible candidates after the first two moves, the code considers that the probability of guessing
-correctly is 1 / N.
+Analyses possible opening words, returning the probability that the correct word is guessed on the third turn
+for the given combination of the first word response and the (optimal for this response) second guess. Also
+computes the total weighted probability for the opening move. If there are N possible candidates after the
+first two moves, the code considers that the probability of guessing correctly is 1 / N.
 
 Run this script with the list of opening word candidates as parameters, e.g.:
 ```
