@@ -4,8 +4,8 @@ Solution for the Riddler of Jan. 14, 2022
 The [Riddler Classic challenge](https://fivethirtyeight.com/features/when-the-riddler-met-wordle/)
 was "to devise a strategy to maximize your probability of winning Wordle in *at most three guesses*."
 
-Two lists of files were provided: all the words that were the legal Wordle guesses, and all the secret
-words that the player had to guess. The first list included the words from the second list.
+Two lists of files were provided: all the words that were the legal Wordle guesses, and all the
+possible secret words. The first list included the words from the second list.
 
 Naturally, without analyzing the game code, the player does not have access to the second list. This
 solution likewise ignores it (naturally, if the space of possible guesses is five times smaller, the
