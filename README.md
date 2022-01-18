@@ -51,8 +51,9 @@ For example, in the file below (for the opening word **slate**), one line reads:
 GYG_G cahow 1.0000 YY___: scale, _YY__: shale, _Y___: spale, _Y__Y: swale
 ```
 This means that if the first-word response was "green, yellow, green, blank, green", the second move should be
-"cahow". If the response to this second word is "yellow, yellow, blank, blank, blank", then the secret word is
-"scale"; if the second-word response is "blank, yellow, yellow, blank, blank", then the secret word is "shale", etc.
+"cahow", which will result in the secret being guessed on the third turn with the probability of 1.0.  If the
+response to this second word is "yellow, yellow, blank, blank, blank", then the secret word is "scale"; if the
+second-word response is "blank, yellow, yellow, blank, blank", then the secret word is "shale", etc.
 
 I've ran the above script in batch mode on all permitted words. The best word and score were **slate** with the
 third-guess win probability of **0.2533**.
