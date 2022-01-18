@@ -67,4 +67,5 @@ the optimal first move is **trace**, with the third-move winning probability of 
 
 [wordle_play.py](wordle_play.py)
 
-The script that actually uses the above algorithm dynamically to play without any knowledge of secret words.
+The script that actually uses the above algorithm dynamically to play without any knowledge of secret words. The
+responses should be entered in the same format as above (e.g., "__g_y"), case-insensitively.
