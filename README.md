@@ -41,8 +41,18 @@ Run this script with the list of opening word candidates as parameters, e.g.:
 ```
 python wordle_strategy.py slate trace ouija
 ```
-If there is only one candidate, the script also returns the optimal *second*-word guesses for each possible
-response from the game.
+If there is only one candidate, the script returns the extended analysis, including the optimal *second*-word
+guesses for each possible *first*-word response from the game. In those cases where the third guess is required
+but would determine the secret word uniquely, each possible *second*-word response is provided along with the
+unque secret word for the third guess.
+
+For example, in the file below (for the opening word **slate**), one line reads:
+```
+GYG_G cahow 1.0000 YY___: scale, _YY__: shale, _Y___: spale, _Y__Y: swale
+```
+This means that if the first-word response was "green, yellow, green, blank, green", the second move should be
+"cahow". If the response to this second word is "yellow, yellow, blank, blank, blank", then the secret word is
+"scale"; if the second-word response is "blank, yellow, yellow, blank, blank", then the secret word is "shale", etc.
 
 I've ran the above script in batch mode on all permitted words. The best word and score were **slate** with the
 third-guess win probability of **0.2533**.
@@ -51,5 +61,5 @@ third-guess win probability of **0.2533**.
 
 The result of running the script above for the best optimal word <b>slate</b>.
 
-I've also run a version of the above script that is aware of the secret words list. In this case, the optimal first
-move is **trace**, with the third-move winning probability of **0.5996**.
+I've also run a slightly modified version of the above script that is aware of the secret words list. In this case,
+the optimal first move is **trace**, with the third-move winning probability of **0.5996**.
