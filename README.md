@@ -64,3 +64,7 @@ The result of running the script above for the best optimal word <b>slate</b>.
 
 I've also run a slightly modified version of the above script that is aware of the secret words list. In this case,
 the optimal first move is **trace**, with the third-move winning probability of **0.5996**.
+
+[wordle_play.py](wordle_play.py)
+
+The script that actually uses the above algorithm dynamically to play without any knowledge of secret words.
