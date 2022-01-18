@@ -69,3 +69,6 @@ the optimal first move is **trace**, with the third-move winning probability of 
 
 The script that actually uses the above algorithm dynamically to play without any knowledge of secret words. The
 responses should be entered in the same format as above (e.g., "__g_y"), case-insensitively.
+
+Note that this script will keep refining until it is certain, as opposed to the problem above, where the aim is
+to refine as much as possible in the first two moves and then take a guess, if needed, on the third attempt.
